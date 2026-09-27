@@ -1,0 +1,35 @@
+/*
+  Traders Care landing tokens.
+  Values are OKLCH channels ("L C H") so Tailwind can add alpha:
+  bg-accent/20 -> oklch(var(--accent) / 0.2).
+  Neutrals carry a whisper of the accent hue (125) so greys and lime feel related.
+*/
+:root {
+  color-scheme: dark;
+
+  /* surfaces, darkest to lightest */
+  --bg: 0.148 0.004 125;
+  --raised: 0.172 0.005 125;
+  --surface: 0.197 0.006 125;
+  --surface-2: 0.232 0.007 125;
+  --surface-3: 0.285 0.008 125;
+
+  /* text */
+  --ink: 0.968 0.006 120;
+  --ink-2: 0.84 0.008 120;
+  --muted: 0.68 0.01 122;
+  --faint: 0.52 0.01 122;
+
+  /* brand accent (lime). Swappable at runtime, see AccentPicker */
+  --accent: 0.915 0.2 124;
+  --accent-ink: 0.2 0.035 124;
+
+  /* money semantics: only for P&L, never decoration. Same values as CARE dark theme */
+  --profit: 0.668 0.142 157; /* #32AE70 */
+  --loss: 0.691 0.2 19; /* #FF5A6A */
+  /* rule verdict WARNING: orchid, never amber (CARE) */
+  --warn: 0.684 0.187 316; /* #C56FE6 */
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --nav-h: 64px;
+}
